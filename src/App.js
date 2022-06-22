@@ -9,7 +9,7 @@ function App() {
             params:{
                 key:`76b75a7ececc4d1c86341505222206`,
                 q:`Toronto`,
-                days:'5'
+                days:3
             }
           })
       
