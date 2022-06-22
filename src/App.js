@@ -1,5 +1,4 @@
 import axios from 'axios';
-import {useEffect} from 'react'
 import './App.css';
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
       
           .then((response)=>{
           console.log(response.data.forecast.forecastday);
-          setWeather(response.data.forecast.forecastday);
+      
           
            
           })
