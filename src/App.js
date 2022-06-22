@@ -1,8 +1,8 @@
 import axios from 'axios';
 import './App.css';
-import {useEffect, useState} from 'react';
+
 function App() {
-  const [weather,setWeather]= useState(['']);
+
   useEffect (()=>{
     axios ({
     
