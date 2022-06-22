@@ -1,7 +1,8 @@
 import axios from 'axios';
 import './App.css';
-import {useEffect} from 'react';
+import {useEffect, useState} from 'react';
 function App() {
+  const [weather,setWeather]= useState(['']);
   useEffect (()=>{
     axios ({
     
@@ -15,6 +16,7 @@ function App() {
       
           .then((response)=>{
           console.log(response.data.forecast.forecastday);
+        console.log(response.data.forecast.forecastday.day.avgtemp_c);
       
           
            
@@ -24,7 +26,9 @@ function App() {
       
   return (
   <>
+
  <p>Powered by <a href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a></p>
+
   </>
   );
 }
